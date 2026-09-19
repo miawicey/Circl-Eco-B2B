@@ -1,11 +1,6 @@
 # CIRCL-ECO: Sistem Waste Management & Circular Economy (Daur Ulang Industri)
 CIRCL-ECO adalah program berbasis Object-Oriented Programming (OOP) dalam bahasa Python yang dirancang untuk mengelola ekosistem rantai pasok daur ulang limbah industri. Program ini memodelkan alur pengumpulan bahan baku limbah, pengolahan menjadi produk bernilai tambah, hingga pemrosesan transaksi komersial skala B2B (Business-to-Business).
 
----
-
-# CIRCL-ECO: Sistem Waste Management & Circular Economy (Daur Ulang Industri)
-
-CIRCL-ECO adalah program berbasis Object-Oriented Programming (OOP) dalam bahasa Python yang dirancang untuk mengelola ekosistem rantai pasok daur ulang limbah industri. Program ini memodelkan alur pengumpulan bahan baku limbah, pengolahan menjadi produk bernilai tambah, hingga pemrosesan transaksi komersial skala B2B (Business-to-Business).
 
 ---
 
