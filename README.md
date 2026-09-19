@@ -12,7 +12,7 @@ Program ini dibangun menggunakan 3 class utama yang saling berinteraksi secara i
 
    Class ini berfungsi mengelola data fisik dan finansial dari bahan baku limbah yang dikumpulkan.
    
-   - Atribut Kelas: instansi, total_material, SATUAN_STANDAR
+   - Atribut Kelas:total_material, SATUAN_STANDAR, kategori_default
    - Atribut Instance Public: item_id, kode, nama, jenis_limbah
    - Atribut Instance Private: __stok_kg, __harga_beli
    - Method:
@@ -25,7 +25,7 @@ Program ini dibangun menggunakan 3 class utama yang saling berinteraksi secara i
 
    Class ini berfungsi mengelola katalog produk hasil proses daur ulang yang siap dijual.
    
-   - Atribut Kelas: instansi, total_produk, KATEGORI_UTAMA
+   - Atribut Kelas: total_produk, KATEGORI_UTAMA, minimal_stok_alert
    - Atribut Instance Public: item_id, kode, nama
    - Atribut Instance Private: __stok_unit, __harga_jual
    - Method:
@@ -38,7 +38,7 @@ Program ini dibangun menggunakan 3 class utama yang saling berinteraksi secara i
 
    Class ini berfungsi memproses transaksi penjualan B2B dengan menghubungkan data klien dan objek dari ProdukOlahan.
    
-   - Atribut Kelas: total_transaksi, PPN_PERCENT
+   - Atribut Kelas: total_transaksi, PPN_PERCENT, status_sistem
    - Atribut Instance Public: id_trx, produk
    - Atribut Instance Private: __nama_klien, __jumlah_unit, __total_bayar, __tgl_transaksi
    - Method:
@@ -56,20 +56,20 @@ Akses terhadap atribut private pada seluruh class dikendalikan menggunakan dekor
 
 - Getter menggunakan dekorator @property untuk membaca nilai atribut private.
 - Setter menggunakan dekorator @<nama_properti>.setter untuk mengubah nilai atribut private.
-- Aturan validasi pada setter:
+  1. Aturan validasi pada setter:
   - Masukan bernilai numerik (stok dan harga) tidak boleh bernilai negatif (< 0).
   - Masukan bernilai string (nama klien) tidak boleh kosong atau hanya berisi spasi.
   - Jika nilai yang dimasukkan melanggar aturan di atas, setter akan memicu raise ValueError untuk menolak perubahan data.
 
 ---
 
-## Panduan Pengujian Program
+# Panduan Pengujian Program
 
 1. Cara Menjalankan Program
 
    Buka terminal atau lingkungan eksekusi Python, lalu jalankan perintah berikut:
    
-   python main.py
+   python circl-eco1.py
 
 2. Alur Pembuktian Pengujian (main.py)
 
