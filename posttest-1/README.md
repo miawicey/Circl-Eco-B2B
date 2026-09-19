@@ -1,4 +1,4 @@
-Program terdiri dari 3 class utama
+# Program terdiri dari 3 class utama
 
 1. MaterialLimbah
    - *Deskripsi:* Mengelola data bahan baku limbah industri.
