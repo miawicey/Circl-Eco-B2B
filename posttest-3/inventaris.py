@@ -9,8 +9,8 @@ class ItemInventaris(ABC):
         self.item_id = int(item_id)
         self.kode = str(kode)
         self.nama = str(nama)
-        self._stok = float(stok)                                   
-        self.__tgl_registrasi = datetime.now().strftime("%Y-%m-%d %H:%M")  
+        self._stok = float(stok)
+        self.__tgl_registrasi = datetime.now().strftime("%Y-%m-%d %H:%M")
         ItemInventaris.total_item += 1
 
     @property
@@ -29,10 +29,9 @@ class ItemInventaris(ABC):
     @abstractmethod
     def get_details(self):
         pass
-
     @abstractmethod
     def hitung_nilai_aset(self):
-            pass
+        pass
     def cetak_info(self):
         print(self.get_details())
         print(f"      Nilai aset: Rp{self.hitung_nilai_aset():,.0f}")
